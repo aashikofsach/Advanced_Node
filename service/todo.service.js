@@ -10,17 +10,18 @@ class TodoService{
         if(todoText.length === 0) return 
 
         todoText = todoText.trim().toUpperCase();
+        // console.log("yaha tak")
         this.todoRepository.insert(todoText)
     }
 
     getOneTodo(id)
     {
-        this.todoRepository.getOne(id)
+       return this.todoRepository.getOne(id)
 
     }
     getAllTodos()
     {
-        this.todoRepository.getAll();
+       return  this.todoRepository.getAll();
     }
 
 }

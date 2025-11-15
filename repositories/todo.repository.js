@@ -1,11 +1,11 @@
 
-const todos = [] ;
+let todos = [] ;
 
 class TodoRepositories
 {
  insert(todo)
  {
-    todo.push({id : todos.length , text : todo})
+    todos.push({id : todos.length , text : todo})
  }
  getAll()
  {
